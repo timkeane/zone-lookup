@@ -32,8 +32,8 @@
 
   </script>
   <link id="esri-stylesheet" rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css" />
-  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.css" />
+  <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.js"></script>
   <script src="./app/es6-promise.auto.min.js"></script>
@@ -43,6 +43,15 @@
   <script>
     require(["Application/init"]);
 
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://maps.nyc.gov/nyc-lib/v1.4.22/js/nyc-lib.js"></script>
+  <!-- <link href="styles/nyc-lib.css" rel="stylsheet"> -->
+  <script>
+    $(document).ready(function() {
+      new nyc.lang.Goog({target: $('body'), button: true})
+    });
   </script>
 </head>
 
